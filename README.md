@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Laboratoire d'Expérimentations Web
 
-## Getting Started
+Ce projet est un laboratoire d'expérimentations utilisant diverses technologies web, notamment React et Next.js, pour explorer et démontrer une variété d'effets visuels et de techniques de développement.
 
-First, run the development server:
+![Capture d'écran de la page d'accueil](./public/images/home-screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Aperçu
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ce laboratoire d'expérimentations offre une collection d'effets visuels captivants, allant des gradients animés aux jeux de lumière innovants, en utilisant diverses technologies web. Les exemples incluent des démonstrations en React, Next.js, et des expérimentations CSS pures, entre autres. Chaque démo est accompagnée de son code source, permettant aux visiteurs de comprendre et de reproduire ces effets dans leurs propres projets, quelle que soit la technologie utilisée.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Fonctionnalités
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Exemples utilisant diverses technologies web (React, Next.js, CSS pur, etc.)
+- Page d'accueil stylisée avec des effets visuels
+- Navigation intuitive entre différentes expérimentations
+- Code source accessible pour chaque effet démontré
+- Responsive design pour une expérience optimale sur tous les appareils
+- Exemples potentiellement exportables vers d'autres technologies
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clonez ce dépôt
+2. Suivez les instructions spécifiques à chaque exemple dans leurs dossiers respectifs
+3. Pour les exemples Next.js/React :
+   - Installez les dépendances avec `npm install`
+   - Lancez le serveur de développement avec `npm run dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Utilisation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Naviguez à travers les différentes sections pour explorer les effets visuels. Chaque page contient une démonstration de l'effet ainsi que le code source correspondant.
 
-## Deploy on Vercel
+## Contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request pour proposer de nouveaux effets ou des améliorations.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licence
+
+[MIT](https://choosealicense.com/licenses/mit/)
