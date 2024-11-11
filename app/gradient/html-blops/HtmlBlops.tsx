@@ -1,6 +1,6 @@
-import Link from "next/link";
 import "./html-blops.css";
-import { Button } from "@/components/ui/button";
+import { BlankLinks } from "@/components/custom-ui/BlankLinks";
+import LinksLayout from "@/components/LinksLayout";
 
 export const HtmlBlops = () => {
   return (
@@ -12,29 +12,20 @@ export const HtmlBlops = () => {
           <div className="blop3"></div>
         </div>
       </div>
-      <div className="flex gap-2 p-4">
-        <Link
-          href="https://www.youtube.com/watch?v=aObTIjD0olA&t=1116s"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="outline">lien 1</Button>
-        </Link>
-        <Link
-          href="https://www.youtube.com/watch?v=Ml-B-W91gtw"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="outline">lien 2</Button>
-        </Link>
-        <Link
-          href="https://www.youtube.com/watch?v=qmRqgFbNprM&t=3138s"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="outline">lien 3</Button>
-        </Link>
-      </div>
+      <LinksLayout>
+        <BlankLinks
+          url="https://www.youtube.com/watch?v=aObTIjD0olA&t=1116s"
+          title="lien 1"
+        />
+        <BlankLinks
+          url="https://www.youtube.com/watch?v=Ml-B-W91gtw"
+          title="lien 2"
+        />
+        <BlankLinks
+          url="https://www.youtube.com/watch?v=qmRqgFbNprM&t=3138s"
+          title="lien 3"
+        />
+      </LinksLayout>
     </>
   );
 };

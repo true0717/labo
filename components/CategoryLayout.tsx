@@ -1,5 +1,3 @@
-import React from "react";
-
 interface CategoryLayoutProps {
   children: React.ReactNode;
   title: string;
