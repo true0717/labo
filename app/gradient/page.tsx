@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CategoryLayout from "@/components/CategoryLayout";
 import {
   Card,
   CardHeader,
@@ -13,12 +14,10 @@ export default function GradientPage() {
   const gradientSubRoutes = gradientRoute?.subRoutes || [];
 
   return (
-    <div className="space-y-6">
-      <h1 className="text-3xl font-bold">Gradients</h1>
-      <p className="text-gray-600">
-        Explorez différents types de gradients et leurs applications.
-      </p>
-
+    <CategoryLayout
+      title="Gradients"
+      description="Explorez différents types de gradients et leurs applications."
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {gradientSubRoutes.map((subRoute) => (
           <Card key={subRoute.path}>
@@ -45,6 +44,6 @@ export default function GradientPage() {
           </Card>
         ))}
       </div>
-    </div>
+    </CategoryLayout>
   );
 }

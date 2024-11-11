@@ -1,18 +1,29 @@
 export type Route = {
   path: string;
   title: string;
+  description?: string;
   subRoutes?: Route[];
 };
+
+export const gradientRoutes: Route[] = [
+  {
+    path: "/gradient/css-animation",
+    title: "Gradient css avec animation",
+    description: "background animation css",
+  },
+  {
+    path: "/gradient/html-blops",
+    title: "Gradient HTML Blops",
+    description: "background animation css + 3 blops animés",
+  },
+];
 
 export const routes: Route[] = [
   { path: "/", title: "Accueil" },
   {
     path: "/gradient",
     title: "Gradients",
-    subRoutes: [
-      { path: "/gradient/gradient1", title: "Gradient 1" },
-      { path: "/gradient/gradient2", title: "Gradient 2" },
-    ],
+    subRoutes: gradientRoutes,
   },
   // Ajoutez d'autres routes ici au fur et à mesure de vos expérimentations
 ];
