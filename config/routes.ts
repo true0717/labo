@@ -8,13 +8,15 @@ export type Route = {
 export const gradientRoutes: Route[] = [
   {
     path: "/gradient/css-animation",
-    title: "Gradient css avec animation",
-    description: "background animation css",
+    title: "Dégradé animé en CSS sans JavaScript",
+    description:
+      "Fond dégradé animé avec des transitions fluides en CSS pur, créant un effet visuel dynamique et moderne",
   },
   {
     path: "/gradient/html-blops",
-    title: "Gradient HTML Blops",
-    description: "background animation css + 3 blops animés",
+    title: "Dégradé avec blops organiques animés",
+    description:
+      "Animation de fond dégradé combinée avec trois formes organiques (blops) qui se déplacent et changent de forme de manière fluide",
   },
 ];
 
