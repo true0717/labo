@@ -1,3 +1,19 @@
+@keyframes css-animation-with-selector-blob {
+  0% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+  30% {
+    rotate: 40deg;
+  }
+  50% {
+    transform: translate(300px, 390px) scale(1.1);
+  }
+  80% {
+    rotate: 90deg;
+  }
+}
+
 .css-animation-with-selector-wrapper {
   @property --color-a {
     syntax: "<color>";
@@ -19,28 +35,14 @@
     initial-value: transparent;
   }
 
-  @keyframes blob {
-    0% {
-      translate: 0 0;
-      rotate: 0deg;
-    }
-    30% {
-      rotate: 40deg;
-    }
-    50% {
-      transform: translate(300px, 390px) scale(1.1);
-    }
-    80% {
-      rotate: 90%;
-    }
-  }
-
   .blob {
-    animation: blob 8s infinite cubic-bezier(0.6, 0.28, 0.735, 0.045);
+    animation: css-animation-with-selector-blob 8s infinite
+      cubic-bezier(0.6, 0.28, 0.735, 0.045);
   }
 
   .blob-reverse {
-    animation: blob 10s infinite cubic-bezier(0.215, 0.61, 0.355, 1) reverse;
+    animation: css-animation-with-selector-blob 10s infinite
+      cubic-bezier(0.215, 0.61, 0.355, 1) reverse;
   }
 
   .blobclass::before {
@@ -53,7 +55,8 @@
     width: 70%;
     height: 50%;
     border-radius: 25px;
-    animation: blob 8s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    animation: css-animation-with-selector-blob 8s infinite
+      cubic-bezier(0.6, -0.28, 0.735, 0.045);
     transform-origin: 60%;
     z-index: 1;
   }
@@ -68,8 +71,10 @@
     width: 70%;
     height: 80%;
     border-radius: 25px;
-    animation: blob 10s infinite cubic-bezier(0.215, 0.61, 0.355, 1) reverse;
+    animation: css-animation-with-selector-blob 10s infinite
+      cubic-bezier(0.215, 0.61, 0.355, 1) reverse;
     transform-origin: 60%;
+    z-index: 1;
   }
 }
 

@@ -14,7 +14,7 @@ export default async function CssAnimationWithSelectorPage() {
       <CssAnimationWithSelector />
       <CustomSeparator />
       <ExplanationBox title={explainTitle} text={text} links={links} />
-      <ExplanationBox title={explainTitle2} text={text2} links={links2} />
+      <ExplanationBox title={explainTitle2} text={text2} />
       <LinksLayout>
         <BlankLinks
           url="https://www.youtube.com/watch?v=aObTIjD0olA"
@@ -34,40 +34,27 @@ const explainTitle = "@Property Explanation";
 const links: LinkItem[] = [
   {
     href: "https://developer.mozilla.org/en-US/docs/Web/CSS/@property",
-    text: "@property at Mdn",
+    text: "documentation MDN sur @property",
   },
 ];
 
 const text =
-  "Gradients are one of those things that you can not animate in CSS. Until NOW. With the introduction of the @ property rule in CSS, you can define the type of a css variable (css custom property). And defining a specific variable as being a color, now gives you the ability to animate a variable from one color to another. And if you then use that variable inside a gradient, that gradient will also animate from one color to another!<br> https://developer.mozilla.org/en-US/docs/Web/CSS/@property";
+  "Les dégradés (gradients) ont toujours été difficiles à animer en CSS. Mais cela a changé ! \n\n" +
+  "Grâce à l'introduction de la règle `@property` en CSS, nous pouvons maintenant :\n\n" +
+  "- Définir le type d'une variable CSS (propriété personnalisée)\n" +
+  "- Spécifier qu'une variable est de type 'color'\n" +
+  "- Animer cette variable d'une couleur à une autre\n\n" +
+  "En utilisant cette variable dans un dégradé, celui-ci s'animera automatiquement entre les différentes couleurs ! 🎨\n\n" +
+  "Pour plus d'informations, consultez la documentation MDN sur @property.";
 
 const explainTitle2 = "Extra Animated Blob";
 
-const links2: LinkItem[] = [
-  {
-    href: "https://developer.mozilla.org/en-US/docs/Web/CSS/@property",
-    text: "@property at Mdn",
-  },
-];
+const text2 = `
+L'animation des blobs utilise deux pseudo-éléments (::before et ::after) avec :
 
-// peux tu expliquer comment l'animation des blobs en after et beffore est faite en t'appuyant sur le code css.
-const text2 = `Dans cet exemple, nous créons une animation complexe de blobs utilisant les pseudo-éléments ::before et ::after. Voici comment ça fonctionne :
+- Des gradients linéaires utilisant les variables CSS --color-a et --color-b
+- Une animation @keyframes qui combine translation, rotation et scale
+- Un effet de flou (blur) pour l'aspect "blob"
+- Des durées d'animation différentes (8s et 10s) avec direction inverse pour le second blob
 
-1. Les blobs sont créés en utilisant des gradients linéaires qui utilisent nos variables CSS personnalisées --color-a et --color-b définies avec @property.
-
-2. L'animation 'blob' est définie avec @keyframes et contrôle :
-   - La translation (déplacement)
-   - La rotation (jusqu'à 90 degrés)
-   - La mise à l'échelle (scale)
-
-3. Les pseudo-éléments ::before et ::after créent deux blobs distincts :
-   - Positionnés de manière absolue avec des dimensions et positions différentes
-   - Utilisant filter: blur(50px) pour créer l'effet flou
-   - Animés avec des durées différentes (8s et 10s)
-   - Le second blob est animé en reverse pour créer un effet plus dynamique
-
-4. Les cubic-bezier sont utilisés pour donner un effet d'accélération et de décélération naturel à l'animation.
-
-L'ensemble crée un effet fluide et organique avec des blobs qui se déplacent de manière indépendante.
-
-Pour une implémentation complète incluant le code Tailwind et plus de détails techniques, je vous invite à consulter le code source et la démonstration sur Frontend FYI, ainsi que la vidéo YouTube explicative disponible dans les liens ci-dessous.`;
+Pour plus de détails techniques, consultez le code source dans les liens ci-dessous.`;

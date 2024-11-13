@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ReactMarkdown from "react-markdown";
 
 export interface LinkItem {
   href: string;
@@ -22,7 +23,9 @@ const ExplanationBox: React.FC<ExplanationBoxProps> = ({
         <h3 className="text-xl font-semibold mb-3 text-purple-300 dark:text-purple-600">
           {title}
         </h3>
-        <p className="text-gray-200 dark:text-gray-800 mb-4">{text}</p>
+        <div className="prose prose-invert dark:prose-light max-w-none text-gray-200 dark:text-gray-800">
+          <ReactMarkdown>{text}</ReactMarkdown>
+        </div>
         {links && links.length > 0 && (
           <div className="flex flex-wrap gap-2">
             {links.map((link, index) => (
