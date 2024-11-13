@@ -14,7 +14,7 @@ export const gradientRoutes: Route[] = [
   },
   {
     path: "/gradient/css-animation-with-selector",
-    title: "Dégradé animé en CSS avec un sélecteur",
+    title: "Dégradé animé en CSS avec un sélecteur + extra animated blobs",
     description:
       "Fond dégradé animé avec des transitions fluides en CSS pur, créant un effet visuel dynamique et moderne avec un sélecteur",
   },

@@ -1,5 +1,8 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import rehypeHighlight from "rehype-highlight";
+import remarkGfm from "remark-gfm";
+import "highlight.js/styles/github-dark.css";
 
 export interface LinkItem {
   href: string;
@@ -24,7 +27,12 @@ const ExplanationBox: React.FC<ExplanationBoxProps> = ({
           {title}
         </h3>
         <div className="prose prose-invert dark:prose-light max-w-none text-gray-200 dark:text-gray-800">
-          <ReactMarkdown>{text}</ReactMarkdown>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeHighlight]}
+          >
+            {text}
+          </ReactMarkdown>
         </div>
         {links && links.length > 0 && (
           <div className="flex flex-wrap gap-2">
