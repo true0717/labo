@@ -17,7 +17,7 @@ export default function ExperimentWrapper({
         {title}
       </h1>
       {description && <p className="text-gray-600 mb-6">{description}</p>}
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+      <div className="bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-lg shadow-lg p-6">
         {children}
       </div>
     </div>
