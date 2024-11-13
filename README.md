@@ -6,6 +6,8 @@ Chaque démonstration est pensée pour répondre à des besoins spécifiques en 
 
 ![Capture d'écran de la page d'accueil](./public/images/home-screenshot.png)
 
+🌐 **Lien vers la démonstration en ligne** : [Accéder à la démonstration](https://react-nextjs-tailwind-css-ui-experiments-wn6f.vercel.app/)
+
 ## Aperçu
 
 Ce laboratoire offre une galerie d’expérimentations, allant des gradients animés aux jeux de lumière en passant par des blobs animés et bien plus encore. Les démonstrations exploitent CSS pur, Tailwind CSS, React, et Next.js pour créer des effets visuels immersifs. Chaque démo inclut son code source, conçu pour être facilement compréhensible et adaptable dans divers projets web.
