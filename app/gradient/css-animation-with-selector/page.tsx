@@ -10,11 +10,13 @@ export default async function CssAnimationWithSelectorPage() {
   const pathname = "/gradient/css-animation-with-selector";
   const { title, description } = getRouteInfo(pathname);
   return (
-    <ExperimentWrapper title={title} description={description}>
+    <ExperimentWrapper
+      title={title}
+      description={description}
+      className="bg-transparent shadow-none p-0"
+    >
       <CssAnimationWithSelector />
-      <CustomSeparator />
-      <ExplanationBox title={explainTitle} text={text} links={links} />
-      <ExplanationBox title={explainTitle2} text={text2} />
+      {/* <CustomSeparator /> */}
       <LinksLayout>
         <BlankLinks
           url="https://www.youtube.com/watch?v=aObTIjD0olA"
@@ -25,6 +27,8 @@ export default async function CssAnimationWithSelectorPage() {
           title="Code & Demo - Frontend FYI"
         />
       </LinksLayout>
+      <ExplanationBox title={explainTitle} text={text} links={links} />
+      <ExplanationBox title={explainTitle2} text={text2} />
     </ExperimentWrapper>
   );
 }

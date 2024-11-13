@@ -1,15 +1,18 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 interface ExperimentWrapperProps {
   children: React.ReactNode;
   title: string;
   description?: string;
+  className?: string;
 }
 
 export default function ExperimentWrapper({
   children,
   title,
   description,
+  className = "",
 }: ExperimentWrapperProps) {
   return (
     <div className="container mx-auto px-4 py-8">
@@ -17,7 +20,12 @@ export default function ExperimentWrapper({
         {title}
       </h1>
       {description && <p className="text-gray-600 mb-6">{description}</p>}
-      <div className="bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-lg shadow-lg p-6">
+      <div
+        className={twMerge(
+          "bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-lg shadow-lg p-6",
+          className
+        )}
+      >
         {children}
       </div>
     </div>

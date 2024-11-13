@@ -28,9 +28,13 @@ La clé est d'utiliser une grande image de dégradé qui se déplace en arrière
   ];
 
   return (
-    <ExperimentWrapper title={title} description={description}>
+    <ExperimentWrapper
+      title={title}
+      description={description}
+      className="bg-transparent shadow-none p-0"
+    >
       <CssAnimation />
-      <CustomSeparator />
+      {/* <CustomSeparator /> */}
       <ExplanationBox title={explainTitle} text={text} links={links} />
     </ExperimentWrapper>
   );

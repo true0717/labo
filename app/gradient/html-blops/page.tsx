@@ -7,7 +7,11 @@ export default function HtmlBlopsPage() {
   const { title, description } = getRouteInfo(pathname);
   return (
     <>
-      <ExperimentWrapper title={title} description={description}>
+      <ExperimentWrapper
+        title={title}
+        description={description}
+        className="bg-transparent shadow-none p-0"
+      >
         <HtmlBlops />
       </ExperimentWrapper>
     </>

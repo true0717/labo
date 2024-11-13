@@ -16,7 +16,8 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`antialiased bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900`}
+        // className={`antialiased bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900`}
+        className={`antialiased bg-white dark:bg-black`}
       >
         <div className="min-h-screen">
           <Navbar />

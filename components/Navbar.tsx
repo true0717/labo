@@ -38,7 +38,7 @@ export default function Navbar() {
                 href={route.path}
                 className="w-full text-gray-800 dark:text-gray-200"
               >
-                Tous les {route.title.toLowerCase()}
+                Home {route.title.toLowerCase()}
               </Link>
             </DropdownMenuItem>
             {route.subRoutes.map((subRoute) => (
