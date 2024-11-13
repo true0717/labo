@@ -6,8 +6,10 @@ export default function HtmlBlopsPage() {
   const pathname = "/gradient/html-blops";
   const { title, description } = getRouteInfo(pathname);
   return (
-    <ExperimentWrapper title={title} description={description}>
-      <HtmlBlops />
-    </ExperimentWrapper>
+    <>
+      <ExperimentWrapper title={title} description={description}>
+        <HtmlBlops />
+      </ExperimentWrapper>
+    </>
   );
 }

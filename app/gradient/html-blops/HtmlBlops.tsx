@@ -14,16 +14,16 @@ export const HtmlBlops = () => {
       </div>
       <LinksLayout>
         <BlankLinks
-          url="https://www.youtube.com/watch?v=aObTIjD0olA&t=1116s"
-          title="lien 1"
-        />
-        <BlankLinks
           url="https://www.youtube.com/watch?v=Ml-B-W91gtw"
-          title="lien 2"
+          title="Youtube - WeCoded"
         />
         <BlankLinks
-          url="https://www.youtube.com/watch?v=qmRqgFbNprM&t=3138s"
-          title="lien 3"
+          url="https://www.youtube.com/watch?v=chBbP1Z6eEQ"
+          title="Youtube - Codelnn"
+        />
+        <BlankLinks
+          url="https://www.youtube.com/watch?v=liW6bDLnuuk"
+          title="Youtube - OnlineTutorial"
         />
       </LinksLayout>
     </>
