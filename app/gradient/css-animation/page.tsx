@@ -2,7 +2,6 @@ import ExperimentWrapper from "@/components/ExperimentLayout";
 import { CssAnimation } from "./CssAnimation";
 import { getRouteInfo } from "@/config/routeUtils";
 import ExplanationBox, { LinkItem } from "@/components/ExplanationBox";
-import CustomSeparator from "@/components/custom-ui/CustomSeparator";
 
 export default async function CssAnimationPage() {
   const pathname = "/gradient/css-animation";

@@ -2,7 +2,6 @@ import ExperimentWrapper from "@/components/ExperimentLayout";
 import { CssAnimationWithSelector } from "./CssAnimationWithSelector";
 import { getRouteInfo } from "@/config/routeUtils";
 import ExplanationBox, { LinkItem } from "@/components/ExplanationBox";
-import CustomSeparator from "@/components/custom-ui/CustomSeparator";
 import { BlankLinks } from "@/components/custom-ui/BlankLinks";
 import LinksLayout from "@/components/LinksLayout";
 

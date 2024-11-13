@@ -23,7 +23,7 @@ Ce laboratoire offre une galerie d’expérimentations, allant des gradients ani
 
 1. Clonez ce dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
+   git clone https://github.com/HenriTeinturier/react-nextjs-tailwind-css-ui-experiments
    ```
 2. Suivez les instructions spécifiques à chaque expérimentation dans leurs dossiers respectifs.
 3. Pour les démonstrations React/Next.js :

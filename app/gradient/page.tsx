@@ -23,8 +23,9 @@ export default function GradientPage() {
             </div>
           </div>
           <p className="text-xl text-gray-800 dark:text-gray-200 font-medium max-w-2xl mx-auto">
-            Plongez dans l'univers fascinant des dégradés CSS et découvrez
-            comment ils peuvent transformer vos designs web.
+            {
+              "Plongez dans l'univers fascinant des dégradés CSS et découvrez comment ils peuvent transformer vos designs web."
+            }
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
             <div className="bg-gradient-to-br from-pink-100 to-purple-100 dark:from-pink-900 dark:to-purple-900 p-6 rounded-lg shadow-lg">

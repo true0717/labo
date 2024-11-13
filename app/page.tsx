@@ -6,7 +6,7 @@ export default function Home() {
       <div className="text-center space-y-8 max-w-2xl mx-auto px-4">
         <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-            Labo d'Expérimentations
+            {" Labo d'Expérimentations"}
           </span>
         </h1>
         <div className="flex justify-center">
