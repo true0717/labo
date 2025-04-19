@@ -7,21 +7,6 @@
 - Responsive design**: Designed for an optimal experience on all devices.
 - Multi-frameworks flexibility**: Examples adaptable to the environments and technologies of your choice.
   
-## Installation
-
-1. bash
-   git clone https://github.com/HenriTeinturier/react-nextjs-tailwind-css-ui-experiments
-   ```
-2. For React/Next.js demos:
-   - Install dependencies with :
-     ```bash
-     npm install
-     ```
-   - Launch the development server with :
-     ``bash
-     npm run dev
-     ```
-
 ## Topics
 
 To aid discovery and accessibility, this repository is tagged with the following topics:
